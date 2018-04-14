@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D928941C-88D4-4744-9365-AE5BB2D1107C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HM.Data</RootNamespace>
+    <AssemblyName>HM.Data</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataAdapter\SqlServer\ProductImageDataAdapter.cs" />
+    <Compile Include="Interface\ICategoryAdapter.cs" />
+    <Compile Include="Interface\ILanguageAdapter.cs" />
+    <Compile Include="DataAdapter\SqlServer\MainCmdDataAdapter.cs" />
+    <Compile Include="DataAdapter\SqlServer\MainGroupCmdDataAdapter.cs" />
+    <Compile Include="DataAdapter\SqlServer\MainUserCmdDataAdapter.cs" />
+    <Compile Include="DataAdapter\SqlServer\MainGroupDataAdapter.cs" />
+    <Compile Include="DataAdapter\SqlServer\MainGroupUserDataAdapter.cs" />
+    <Compile Include="DataAdapter\SqlServer\LanguageDataAdapter.cs" />
+    <Compile Include="DataAdapter\SqlServer\MainUserDataAdapter.cs" />
+    <Compile Include="DataAdapter\SqlServer\ProductDataAdapter.cs" />
+    <Compile Include="Interface\IMainCmdAdapter.cs" />
+    <Compile Include="Interface\IMainGroupAdapter.cs" />
+    <Compile Include="Interface\IMainGroupCmdAdapter.cs" />
+    <Compile Include="Interface\IMainGroupUserAdapter.cs" />
+    <Compile Include="Interface\IMainSettingAdapter.cs" />
+    <Compile Include="Interface\IMainUserAdapter.cs" />
+    <Compile Include="Interface\IMainUserCmdAdapter.cs" />
+    <Compile Include="Interface\IOrderAdapter.cs" />
+    <Compile Include="Interface\IOrderDetailAdapter.cs" />
+    <Compile Include="Interface\IProductAdapter.cs" />
+    <Compile Include="Interface\IProductImageAdapter.cs" />
+    <Compile Include="Interface\IRoleAdapter.cs" />
+    <Compile Include="Interface\IShopCartAdapter.cs" />
+    <Compile Include="Interface\ISupplierAdapter.cs" />
+    <Compile Include="Interface\IUserAdapter.cs" />
+    <Compile Include="Interface\IUserRoleAdapter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="DataAdapter\SqlServer\RoleDataAdapter.cs" />
+    <Compile Include="DataAdapter\SqlServer\ShopCartDataAdapter.cs" />
+    <Compile Include="DataAdapter\SqlServer\SupplierDataAdapter.cs" />
+    <Compile Include="DataAdapter\SqlServer\UserRoleDataAdapter.cs" />
+    <Compile Include="DataAdapter\SqlServer\MainSettingDataAdapter.cs" />
+    <Compile Include="DataAdapter\SqlServer\CategoryDataAdapter.cs" />
+    <Compile Include="DataAdapter\SqlServer\OrderDataAdapter.cs" />
+    <Compile Include="DataAdapter\SqlServer\OrderDetailDataAdapter.cs" />
+    <Compile Include="DataAdapter\SqlServer\UserDataAdapter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HM.Common\HM.Common.csproj">
+      <Project>{d6f2b6c3-65d8-4ae7-9fad-18d0c28a86eb}</Project>
+      <Name>HM.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HM.Core\HM.Core.csproj">
+      <Project>{F9F865B5-B809-4D2C-81EA-F5693F9F9EB3}</Project>
+      <Name>HM.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HM.Model\HM.Model.csproj">
+      <Project>{ba65dca3-cc0e-4a93-96ab-4b8372505c53}</Project>
+      <Name>HM.Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HM.Util\HM.Util.csproj">
+      <Project>{c8309ffa-5380-40cc-9aff-a0c73534fcf0}</Project>
+      <Name>HM.Util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

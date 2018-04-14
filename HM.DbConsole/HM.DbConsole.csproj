@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5827048A-7CA8-4DBC-9C4F-4BA853304DEB}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>HM.DbConsole</RootNamespace>
+    <AssemblyName>HM.DbConsole</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="dbo\Data\CreateDatabase.sql" />
+    <Content Include="dbo\Scripts\PostDeployment.sql" />
+    <Content Include="dbo\Stored Procedures\CategoryInsert.sql" />
+    <Content Include="dbo\Stored Procedures\CreateStoredProcedure.sql" />
+    <Content Include="dbo\Stored Procedures\Product.sql" />
+    <Content Include="dbo\Stored Procedures\ProductPagination.sql" />
+    <Content Include="dbo\Tables\CreateTable.sql" />
+    <Content Include="HMShopGen\dbo.Category.Table.sql" />
+    <Content Include="HMShopGen\dbo.Language.Table.sql" />
+    <Content Include="HMShopGen\dbo.Main_Active_User.Table.sql" />
+    <Content Include="HMShopGen\dbo.Main_Cmd.Table.sql" />
+    <Content Include="HMShopGen\dbo.Main_Group.Table.sql" />
+    <Content Include="HMShopGen\dbo.Main_Group_Cmd.Table.sql" />
+    <Content Include="HMShopGen\dbo.Main_Group_User.Table.sql" />
+    <Content Include="HMShopGen\dbo.Main_Setting.Table.sql" />
+    <Content Include="HMShopGen\dbo.Main_User.Table.sql" />
+    <Content Include="HMShopGen\dbo.Main_User_Cmd.Table.sql" />
+    <Content Include="HMShopGen\dbo.Order.Table.sql" />
+    <Content Include="HMShopGen\dbo.OrderStatus.Table.sql" />
+    <Content Include="HMShopGen\dbo.Order_Detail.Table.sql" />
+    <Content Include="HMShopGen\dbo.Product.Table.sql" />
+    <Content Include="HMShopGen\dbo.Product_Image.Table.sql" />
+    <Content Include="HMShopGen\dbo.Role.Table.sql" />
+    <Content Include="HMShopGen\dbo.Shop_Cart.Table.sql" />
+    <Content Include="HMShopGen\dbo.sp_Category_CountProductByCategoryID.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Category_Delete.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Category_GetAll.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Category_GetByEnable.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Category_GetById.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Category_Update.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Language_Delete.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Language_GetAll.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Language_GetById.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Language_Insert.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Language_Update.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Main_Active_User_Get.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Main_Active_User_Insert.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Main_Cmd_CountChild.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Main_Cmd_Delete.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Main_Cmd_GetAll.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Main_Cmd_GetByID.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Main_Cmd_GetByParentID.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Main_Cmd_GetByValue.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Main_Cmd_Insert.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Main_Cmd_SetIndex.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Main_Cmd_Update.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Main_Group_Cmd_Delete.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Main_Group_Cmd_GetByGroupID.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Main_Group_Cmd_Insert.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Main_Group_Delete.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Main_Group_GetAll.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Main_Group_GetByID.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Main_Group_Insert.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Main_Group_Update.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Main_Group_User_Delete.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Main_Group_User_GetByGroupID.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Main_Group_User_GetByUserID.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Main_Group_User_Insert.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Main_Setting_Delete.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Main_Setting_DeleteByName.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Main_Setting_GetValue.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Main_Setting_SetValue.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Main_User_Cmd_CheckRole.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Main_User_Cmd_Delete.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Main_User_Cmd_GetCmdID.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Main_User_Cmd_GetGroupByUserID.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Main_User_Cmd_Insert.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Main_User_Delete.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Main_User_GetAll.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Main_User_GetByEmail.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Main_User_GetByEmailPassword.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Main_User_GetByID.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Main_User_Insert.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Main_User_Update.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Order_Detail_GetByID.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Order_Detail_GetByOrderIDUserIDDealID.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Order_Detail_Insert.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Order_GetAll.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Order_GetByID.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Order_GetByUserID.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Order_GetTop.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Order_Insert.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Order_Status_GetAll.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Order_Status_Insert.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Order_Status_Update.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Order_UpdateStatus.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Product_Delete.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Product_GetAll.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Product_GetByCategoryID.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Product_GetByCriteria.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Product_GetByID.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Product_GetTop.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Product_Image_Delete.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Product_Image_GetAll.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Product_Image_GetByID.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Product_Image_Insert.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Product_Image_Update.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Product_Insert.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Product_Update.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Role_Delete.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Role_GetAll.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Role_GetById.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Role_Insert.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Role_Update.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Shop_Cart_Delete.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Shop_Cart_GetByGuid.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Shop_Cart_Insert.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Shop_Cart_Update.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Supplier_Delete.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Supplier_GetAll.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Supplier_GetById.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Supplier_Insert.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Supplier_Update.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_User_Delete.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_User_GetAdmin.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_User_GetAll.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_User_GetByAppId.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_User_GetById.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_User_GetByUserName.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_User_GetUser.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_User_GetUserByUserNamePassword.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_User_Insert.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_User_Role_CheckRole.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_User_Role_Delete.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_User_Role_GetByUserID.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_User_Role_Insert.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_User_Role_Set.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_User_Update.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Vote_DeleteByUserID.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Vote_GetAll.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Vote_GetByContentID.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Vote_GetByUserID.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Vote_GetByUserIDContentID.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Vote_Insert.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Vote_Type_Delete.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Vote_Type_GetAll.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Vote_Type_GetByID.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Vote_Type_Insert.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Vote_Type_Update.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.sp_Vote_Update.StoredProcedure.sql" />
+    <Content Include="HMShopGen\dbo.Supplier.Table.sql" />
+    <Content Include="HMShopGen\dbo.User.Table.sql" />
+    <Content Include="HMShopGen\dbo.User_Role.Table.sql" />
+    <Content Include="HMShopGen\dbo.Vote.Table.sql" />
+    <Content Include="HMShopGen\dbo.Vote_Type.Table.sql" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

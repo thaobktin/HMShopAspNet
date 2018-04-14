@@ -1,0 +1,128 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2006
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HM.Cache", "HM.Cache\HM.Cache.csproj", "{A514CE59-DBC6-487F-8F23-0FDFDB4CC145}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HM.Common", "HM.Common\HM.Common.csproj", "{D6F2B6C3-65D8-4AE7-9FAD-18D0C28A86EB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Library", "Library", "{1B377DD9-BF33-494B-9DB0-1BFACCA5D93C}"
+	ProjectSection(SolutionItems) = preProject
+		Library\CKEditor.NET.dll = Library\CKEditor.NET.dll
+		Library\CollectionPager.dll = Library\CollectionPager.dll
+		Library\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll = Library\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HM.Core", "HM.Core\HM.Core.csproj", "{F9F865B5-B809-4D2C-81EA-F5693F9F9EB3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HM.Model", "HM.Model\HM.Model.csproj", "{BA65DCA3-CC0E-4A93-96AB-4B8372505C53}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HM.Data", "HM.Data\HM.Data.csproj", "{D928941C-88D4-4744-9365-AE5BB2D1107C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HM.Util", "HM.Util\HM.Util.csproj", "{C8309FFA-5380-40CC-9AFF-A0C73534FCF0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HM.Services", "HM.Services\HM.Services.csproj", "{30E6194A-91C0-4078-87EE-FD27B59EF76D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HM.Control", "HM.Control\HM.Control.csproj", "{3F7EC4D3-1583-48CD-8024-1B785591FFAD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataBase", "DataBase", "{878D292D-E319-42F2-ADE3-1871670DC9C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HMShop", "HMShop\HMShop.csproj", "{ED141CEC-72CB-4113-8A36-431C654CDF4B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HM.DbConsole", "HM.DbConsole\HM.DbConsole.csproj", "{5827048A-7CA8-4DBC-9C4F-4BA853304DEB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A514CE59-DBC6-487F-8F23-0FDFDB4CC145}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A514CE59-DBC6-487F-8F23-0FDFDB4CC145}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A514CE59-DBC6-487F-8F23-0FDFDB4CC145}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A514CE59-DBC6-487F-8F23-0FDFDB4CC145}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6F2B6C3-65D8-4AE7-9FAD-18D0C28A86EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6F2B6C3-65D8-4AE7-9FAD-18D0C28A86EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6F2B6C3-65D8-4AE7-9FAD-18D0C28A86EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6F2B6C3-65D8-4AE7-9FAD-18D0C28A86EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9F865B5-B809-4D2C-81EA-F5693F9F9EB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9F865B5-B809-4D2C-81EA-F5693F9F9EB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9F865B5-B809-4D2C-81EA-F5693F9F9EB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9F865B5-B809-4D2C-81EA-F5693F9F9EB3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BA65DCA3-CC0E-4A93-96AB-4B8372505C53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BA65DCA3-CC0E-4A93-96AB-4B8372505C53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BA65DCA3-CC0E-4A93-96AB-4B8372505C53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BA65DCA3-CC0E-4A93-96AB-4B8372505C53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D928941C-88D4-4744-9365-AE5BB2D1107C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D928941C-88D4-4744-9365-AE5BB2D1107C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D928941C-88D4-4744-9365-AE5BB2D1107C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D928941C-88D4-4744-9365-AE5BB2D1107C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8309FFA-5380-40CC-9AFF-A0C73534FCF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8309FFA-5380-40CC-9AFF-A0C73534FCF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8309FFA-5380-40CC-9AFF-A0C73534FCF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8309FFA-5380-40CC-9AFF-A0C73534FCF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30E6194A-91C0-4078-87EE-FD27B59EF76D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30E6194A-91C0-4078-87EE-FD27B59EF76D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30E6194A-91C0-4078-87EE-FD27B59EF76D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30E6194A-91C0-4078-87EE-FD27B59EF76D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F7EC4D3-1583-48CD-8024-1B785591FFAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F7EC4D3-1583-48CD-8024-1B785591FFAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F7EC4D3-1583-48CD-8024-1B785591FFAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F7EC4D3-1583-48CD-8024-1B785591FFAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED141CEC-72CB-4113-8A36-431C654CDF4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED141CEC-72CB-4113-8A36-431C654CDF4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED141CEC-72CB-4113-8A36-431C654CDF4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED141CEC-72CB-4113-8A36-431C654CDF4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5827048A-7CA8-4DBC-9C4F-4BA853304DEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5827048A-7CA8-4DBC-9C4F-4BA853304DEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5827048A-7CA8-4DBC-9C4F-4BA853304DEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5827048A-7CA8-4DBC-9C4F-4BA853304DEB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5827048A-7CA8-4DBC-9C4F-4BA853304DEB} = {878D292D-E319-42F2-ADE3-1871670DC9C8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6DE7BC0B-F011-49E7-8CA1-FC9CE99E1391}
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 11
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://thaobktin.visualstudio.com/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = HM.Cache\\HM.Cache.csproj
+		SccProjectName1 = HM.Cache
+		SccLocalPath1 = HM.Cache
+		SccProjectUniqueName2 = HM.Common\\HM.Common.csproj
+		SccProjectName2 = HM.Common
+		SccLocalPath2 = HM.Common
+		SccProjectUniqueName3 = HM.Core\\HM.Core.csproj
+		SccProjectName3 = HM.Core
+		SccLocalPath3 = HM.Core
+		SccProjectUniqueName4 = HM.Model\\HM.Model.csproj
+		SccProjectName4 = HM.Model
+		SccLocalPath4 = HM.Model
+		SccProjectUniqueName5 = HM.Data\\HM.Data.csproj
+		SccProjectName5 = HM.Data
+		SccLocalPath5 = HM.Data
+		SccProjectUniqueName6 = HM.Util\\HM.Util.csproj
+		SccProjectName6 = HM.Util
+		SccLocalPath6 = HM.Util
+		SccProjectUniqueName7 = HM.Services\\HM.Services.csproj
+		SccProjectName7 = HM.Services
+		SccLocalPath7 = HM.Services
+		SccProjectUniqueName8 = HM.Control\\HM.Control.csproj
+		SccProjectName8 = HM.Control
+		SccLocalPath8 = HM.Control
+		SccProjectUniqueName9 = HMShop\\HMShop.csproj
+		SccProjectName9 = HMShop
+		SccLocalPath9 = HMShop
+		SccProjectUniqueName10 = HM.DbConsole\\HM.DbConsole.csproj
+		SccProjectTopLevelParentUniqueName10 = HMSol.sln
+		SccProjectName10 = HM.DbConsole
+		SccLocalPath10 = HM.DbConsole
+	EndGlobalSection
+EndGlobal
